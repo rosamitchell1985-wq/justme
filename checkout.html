@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Checkout | Just4me LLC</title>
+<meta name="description" content="Complete your Just4me order with our simple, secure checkout. Test-mode demo payment - no real charge.">
+<meta property="og:title" content="Secure Checkout | Just4me LLC">
+<meta property="og:description" content="Complete your Just4me order with our simple, secure checkout. Test-mode demo payment - no real charge.">
+<meta property="og:url" content="https://just4me.store/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://just4me.store/">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Just4me LLC","url":"https://just4me.store","email":"hello@just4me.store","address":{"@type":"PostalAddress","addressLocality":"Philadelphia","addressRegion":"MS","postalCode":"39350","addressCountry":"US"}}
+</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">Just<span>4</span>me</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="section">
+  <h1 style="font-size:38px;color:var(--deep);text-align:center;margin-bottom:8px">Secure Checkout</h1>
+  <p class="sub">One simple form - no account needed</p>
+
+ 
+
+  <div class="table-wrap" style="max-width:760px;margin:0 auto 32px;padding:24px">
+    <h2 style="font-size:24px;color:var(--deep);margin-bottom:14px">Order Summary</h2>
+    <div id="checkout-summary"></div>
+  </div>
+
+  <form id="checkout-form" class="form-card" novalidate>
+    <h2 style="font-size:24px;color:var(--deep);margin-bottom:18px">Contact &amp; Shipping</h2>
+    <div class="form-grid">
+      <div class="form-field full"><label for="full-name">Full Name *</label>
+        <input id="full-name" name="full-name" type="text" autocomplete="name"><div class="field-error"></div></div>
+      <div class="form-field"><label for="email">Email Address *</label>
+        <input id="email" name="email" type="email" autocomplete="email"><div class="field-error"></div></div>
+      <div class="form-field"><label for="phone">Phone (optional)</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel"><div class="field-error"></div></div>
+      <div class="form-field full"><label for="address">Street Address *</label>
+        <input id="address" name="address" type="text" autocomplete="street-address"><div class="field-error"></div></div>
+      <div class="form-field"><label for="city">City *</label>
+        <input id="city" name="city" type="text" autocomplete="address-level2"><div class="field-error"></div></div>
+      <div class="form-field"><label for="state">State *</label>
+        <select id="state" name="state" autocomplete="address-level1">
+          <option value="">Select your state</option>
+          <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+        </select><div class="field-error"></div></div>
+      <div class="form-field"><label for="zip">ZIP Code *</label>
+        <input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="10"><div class="field-error"></div></div>
+    </div>
+
+    <h2 style="font-size:24px;color:var(--deep);margin:28px 0 18px">Payment Details</h2>
+    <div class="form-grid">
+      <div class="form-field full"><label for="card-name">Name on Card *</label>
+        <input id="card-name" name="card-name" type="text" autocomplete="cc-name"><div class="field-error"></div></div>
+      <div class="form-field full"><label for="card-number">Card Number *</label>
+        <input id="card-number" name="card-number" type="text" inputmode="numeric" autocomplete="cc-number" maxlength="19" placeholder="4242 4242 4242 4242"><div class="field-error"></div></div>
+      <div class="form-field"><label for="card-exp">Expiry Date (MM/YY) *</label>
+        <input id="card-exp" name="card-exp" type="text" inputmode="numeric" autocomplete="cc-exp" maxlength="5" placeholder="08/28"><div class="field-error"></div></div>
+      <div class="form-field"><label for="card-cvv">Security Code (CVV) *</label>
+        <input id="card-cvv" name="card-cvv" type="password" inputmode="numeric" autocomplete="cc-csc" maxlength="4" placeholder="123"><div class="field-error"></div></div>
+    </div>
+
+    <div style="margin:22px 0">
+      <label style="font-weight:normal;font-size:18px;display:flex;gap:10px;align-items:flex-start">
+        <input id="agree-terms" type="checkbox" style="width:26px;height:26px;min-height:26px;margin-top:3px" required>
+        <span>I agree to the <a href="policies.html#terms">Terms of Service</a> and <a href="policies.html#privacy">Privacy Policy</a>, and I understand this is a demonstration checkout in test mode.</span>
+      </label>
+    </div>
+
+    <button id="pay-btn" class="btn btn-green" type="submit" style="width:100%">Pay Now - Secure Demo Payment</button>
+    <p class="qty-note center" style="margin-top:14px">&#128274; Payments are encrypted.</p>
+  </form>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>Just4me LLC</h4>
+      <p style="font-size:16px;line-height:1.6">Quality cosmetics, beauty supplies, and fragrances shipped across the USA. Simple shopping, honest products, real people.</p>
+      <p style="font-size:16px;margin-top:10px">Philadelphia, MS 39350<br>Email: <a href="mailto:hello@just4me.store" style="display:inline">hello@just4me.store</a></p>
+    </div>
+    <div>
+      <h4>Customer Care</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="policies.html#shipping">Shipping Policy</a>
+      <a href="policies.html#returns">Returns &amp; Refunds</a>
+      <a href="policies.html#privacy">Privacy Policy</a>
+    </div>
+    <div>
+      <h4>About</h4>
+      <a href="policies.html#terms">Terms of Service</a>
+      <a href="policies.html#accessibility">Accessibility Statement</a>
+      <a href="shop.html">Shop All Products</a>
+    </div>
+    <div>
+      <h4>Shop With Confidence</h4>
+      <a href="policies.html#shipping">Free shipping over $50</a>
+      <a href="policies.html#returns">30-day easy returns</a>
+      <a href="policies.html#privacy">Secure checkout</a>
+    </div>
+  </div>
+  <p class="disclaimer">Disclaimer: Just4me LLC products are cosmetics and personal care items. They are not intended to diagnose, treat, cure, or prevent any disease. Product descriptions reflect cosmetic benefits only. Individual results may vary.</p>
+  <div class="footer-bottom">&copy; <span id="year">2026</span> Just4me LLC. All rights reserved. | just4me.store</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
